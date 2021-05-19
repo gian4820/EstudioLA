@@ -15,6 +15,7 @@ body {
 
 a {
   color: #ffc451;
+  font-weight: bold;
 }
 
 a:hover {
