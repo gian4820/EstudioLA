@@ -53,16 +53,13 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center justify-content-center">
+  <section id="hero" class="d-flex align-items-end justify-content-center pb-3">
     <div class="container" data-aos="fade-up">
 
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+      <div>
         <div class="col-xl-12 col-lg-8">
-          <h1>Estudio Lopez Amaya</h1>
-          <h1>Merguerian</h1>
-          <h1>Arnaudo</h1>
-          <h1><span>& Asoc.</span></h1>
-          <h2>Especializados en Derecho Publico y Privado</h2>
+          <h1>López Amaya - Merguerian - Arnaudo - & Asoc.</h1>
+          <h2><span>Abogados</span></h2>
         </div>
       </div>
 
@@ -213,7 +210,7 @@
 
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
                 <img src="assets/img/team/felix2.jpg" class="img-fluid" alt="">
@@ -222,13 +219,17 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Felix Lopez Amaya</h4>
-                <span>Abogado</span>
+                <h4>Félix A. López Amaya</h4>
+                <ul>
+                  <li><span>Profesor de Derecho Constitucional y Derecho Procesal Constitucional, UNC</span></li>
+                  <li><span>Director de la Sala de Derecho Procesal Constitucional del Colegio de Abogados de Córdoba</span></li>
+                  <li><span>Delegado Titular del Colegio de Abogados de Córdoba ante la Federación Argentina de Colegios de Abogados (FACA).-</span></li>
+                </ul>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
                 <img src="assets/img/team/daniel2.jpg" class="img-fluid" alt="">
@@ -243,7 +244,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
                 <img src="assets/img/team/nadia2.jpg" class="img-fluid" alt="">
@@ -258,7 +259,7 @@
             </div>
           </div>
           
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
                 <img src="assets/img/team/noelia2.jpg" class="img-fluid" alt="">
@@ -273,7 +274,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
                 <img src="assets/img/team/virginia2.jpg" class="img-fluid" alt="">
@@ -288,7 +289,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
               <div class="member-img">
                 <img src="assets/img/team/nadiam2.jpg" class="img-fluid" alt="">
@@ -350,30 +351,31 @@
           <div class="col-lg-8 mt-5 mt-lg-0">
 
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Por favor ingresa hasta 4 caracteres" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Por favor ingresa un email valido" />
-                  <div class="validate"></div>
-                </div>
-              </div>
+              
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Titulo" data-rule="minlen:4" data-msg="Por favor, ingresa hasta 8 caracteres" />
+                <input type="text" name="nombre" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Por favor ingresa hasta 4 caracteres" />
                 <div class="validate"></div>
               </div>
+
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor envia un mensaje" placeholder="Mensaje"></textarea>
+                <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Telefono" data-rule="minlen:7" data-msg="Por favor, ingresa hasta 7 caracteres" />
                 <div class="validate"></div>
               </div>
+
+              <div class="form-group">
+                <textarea class="form-control" name="mensaje" rows="5" data-rule="required" data-msg="Por favor envia un mensaje" placeholder="Mensaje"></textarea>
+                <div class="validate"></div>
+              </div>
+
               <div class="mb-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Enviar</button></div>
+
+              <div class="text-center">
+                <button type="submit" name="enviar">Enviar</button>
+              </div>
             </form>
 
           </div>

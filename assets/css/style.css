@@ -119,6 +119,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -406,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.082);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -418,6 +419,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding-top: 74px;
   text-align: center;
+  display: flex;
+  align-items: flex-end;
 }
 
 #hero h1 {
@@ -425,13 +428,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 40px;
   font-weight: 500;
-  line-height: 40px;
   color: #fff;
   font-family: 'Taviraj', 'Lateef','Rufina';
+
 }
 
-#hero h1 span {
+#hero h2 span {
   color: #ffc451;
+  font-weight: bold;
+  border-bottom: 1px solid #ffc451;
+  text-transform: uppercase;
 }
 
 p span{
@@ -492,13 +498,24 @@ p span{
   #hero {
     height: auto;
   }
+  #header .logo a {
+    font-weight: 500;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.308);
+  }
+
+  #hero .container{
+    padding-bottom: 30px;
+    padding-top: 180px;
+  }
+
+
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 18px;
   }
   #hero h2 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 12px;
+    margin: 0;
   }
 }
 
