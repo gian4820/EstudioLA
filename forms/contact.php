@@ -1,6 +1,7 @@
 <?php
 $remitente = 'abogados@estudiolopezamaya.com.ar';
 $destinatario = 'abogados@estudiolopezamaya.com.ar'; // en esta línea va el mail del destinatario.
+//$destinatario = 'lopezamayaestudio@gmail.com'; // en esta línea va el mail del destinatario.
 $asunto = 'Consulta desde sitio web'; // acá se puede modificar el asunto del mail
 if (!$_POST){
   
@@ -24,12 +25,7 @@ if (!$_POST){
 
     mail($destinatario, $asunto, $cuerpo, $headers);
     
-    include 'confirma.html'; //se debe crear un html que confirma el envío
+    include './enviado.html'; //se debe crear un html que confirma el envío
 }
-
-
-
-
-
 
 ?>
